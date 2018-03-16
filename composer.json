@@ -48,7 +48,7 @@
   },
   "scripts": {
     "pre-install-cmd": [
-      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+      "@php -r \"file_exists('.env') || copy('.env.development.example', '.env');\"",
       "@php -r \"file_exists('.env.staging') || copy('.env.staging.example', '.env.staging');\"",
       "@php -r \"file_exists('.env.testing') || copy('.env.testing.example', '.env.testing');\""
     ],
