@@ -66,8 +66,10 @@
       "yarn development"
     ],
     "test": [
-      "phpunit --colors=always",
-      "@php artisan dusk --colors=always"
+        "phpunit --colors=always"
+    ],
+    "e2e": [
+        "@php artisan dusk --colors=always"
     ],
     "homestead-init": [
       "vagrant up --provision",
